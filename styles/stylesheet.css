@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://live.staticflickr.com/5485/10612813416_3e3e169967_b.jpg");
   background-color: #3e187a;
@@ -30,7 +33,7 @@ nav {
 
 nav a {
   padding: 20px;
-  font-family: sans-serif;
+  font-family: "Secular One", sans-serif;
   text-decoration: none;
 }
 
@@ -43,8 +46,36 @@ h2 {
   font-weight: 700;
 }
 
-article {
+section,
+.project {
+  display: flex;
+}
+
+
+section {
+  justify-content: space-around;
   text-align: center;
+  flex-flow: row wrap;
+}
+
+.project {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+  width: 50%;
+  border-left: 6px solid red;
+  background-color: lightgrey;
+  font-family: "Fira Sans", "Times New Roman";
+}
+
+img {
+  border: 5px solid black;
+  /* border-radius: 5px; */
 }
 
 a:hover {
@@ -58,4 +89,9 @@ footer {
   font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;
   border-top: 5px solid black;
+}
+
+i {
+  color: white;
+  font-size: 1rem;
 }
