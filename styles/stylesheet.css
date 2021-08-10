@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #323232;
 }
 
 .hero-image {
@@ -38,13 +39,33 @@ nav a {
   text-decoration: none;
 }
 
+nav a:visited {
+  color: black;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.my-projects {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 h2 {
   color: #440000;
+  padding: 10px;
   text-align: center;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
   font-family: "Calibri", Arial;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 2rem;
+  background-color: white;
+  border: 15px solid black;
+  border-radius: 5px;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 section,
@@ -63,6 +84,15 @@ section {
   align-items: center;
   flex-direction: column;
   margin-bottom: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border: 15px solid black;
+  padding: 30px;
+}
+
+.project:nth-child(2),
+.project:nth-child(3) {
+  border-color: #870000;
 }
 
 h3 {
@@ -75,12 +105,41 @@ h3 {
 }
 
 .project img {
-  border: 5px solid black;
-  /* border-radius: 5px; */
+  border: 10px solid black;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
 }
 
-a:hover {
+.project img:hover {
+  -webkit-filter: blur(5px);
+}
+
+.project a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 1s ease;
+  color: white;
+  font-family: "Calibri", Arial;
+  background-color: #870000;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.project a[href="https://www.youtube.com/channel/UCHXVjeHdWiH37Gd_taVKudg"],
+.project a[href="https://jrosecow.com/password_protect/blog"] {
+  background-color: black;
+}
+
+.project a:visited {
+  color: white;
+}
+
+.project a:hover {
   font-weight: bold;
+  font-size: 20px;
 }
 
 footer {
