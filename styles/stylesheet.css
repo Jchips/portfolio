@@ -104,6 +104,7 @@ h3 {
   font-family: "Fira Sans", "Times New Roman";
 }
 
+/* transition code from https://designshack.net/ */
 .project img {
   border: 10px solid black;
   -webkit-transition: all 1s ease;
