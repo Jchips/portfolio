@@ -37,6 +37,7 @@ nav a {
   padding: 20px;
   font-family: "Secular One", sans-serif;
   text-decoration: none;
+  color: black;
 }
 
 nav a:visited {
