@@ -1,0 +1,137 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://live.staticflickr.com/1719/23766872579_4030788977_b.jpg");
+  background-color: #3e187a;
+  height: 300px;
+  background-size: cover;
+}
+
+form {
+  margin: 20px 400px 20px 400px;
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+h3 {
+  width: 95%;
+  padding: 5px;
+  margin: auto auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input,
+fieldset,
+textarea {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type=text]:focus {
+  background-color: #eee;
+}
+
+input[type="email"]:focus {
+  background-color: #eee;
+}
+
+input[type="submit"] {
+  margin: auto auto;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+/* Hide the browsers default checkbox */
+.survey input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Customize the labels */
+.survey label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkbox {
+  position: absolute;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* Create a custom radio button */
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.survey label:hover input ~ .checkbox,
+.survey label:hover input ~ .radio {
+  background-color: #870000;
+}
+
+.survey input:checked ~ .checkbox,
+.survey input:checked ~ .radio {
+  background-color: #870000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox:after,
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.survey input:checked ~ .checkbox:after,
+.survey input:checked ~ .radio:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.survey .checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Style the indicator (dot/circle) */
+.survey .radio:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Jaye</title>
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link rel="stylesheet" href="styles/contact-stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  </head>
+  <body>
+    <header id="index-header" class="hero-image" title="'Abstract landscape' by kevin dooley is licensed with CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/">
+      <h1>Contact information</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="contact-form" method="post">
+
+      <h3>Contact me!</h3>
+
+      <label for="name">Your name</label>
+      <input id="name" type="text" name="client-name" required>
+
+      <label for="email">Your email address</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="reason">Comment</label>
+      <textarea id="reason" name="comment" rows="4" cols="25"></textarea>
+
+      <h3>Please answer the following survey questions</h3>
+
+      <fieldset class="survey">
+        <legend>Survey question 1: What kind of phone(s) do you use as a daily driver?</legend>
+        <label>Apple iPhone
+          <input type="checkbox" name="operating-system" value="iphone">
+          <span class="checkbox"></span>
+        </label>
+        <label>Samsung Galaxy
+          <input type="checkbox" name="operating-system" value="samsung">
+          <span class="checkbox"></span>
+        </label>
+        <label>Google Pixel
+          <input type="checkbox" name="operating-system" value="pixel">
+          <span class="checkbox"></span>
+        </label>
+        <label>OnePlus
+          <input type="checkbox" name="operating-system" value="oneplus">
+          <span class="checkbox"></span>
+        </label>
+        <label>Huawei
+          <input type="checkbox" name="operating" value="huawei">
+          <span class="checkbox"></span>
+        </label>
+        <label>Others
+          <input type="checkbox" name="operating-system" value="other">
+          <span class="checkbox"></span>
+        </label>
+      </fieldset>
+
+      <label for="opinion">Survey question 2: Do you like your phone(s)? Why or why not?</label>
+      <textarea id="opinion" name="phone-opinion" rows="8" cols="50"></textarea>
+
+      <fieldset class="survey">
+        <legend>Survey question 3: How often do you upgrade your phone?</legend>
+        <label>
+          <input type="radio" name="frequency" value="About every 1-2 years">
+          <span class="radio"></span>About every 1-2 years
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="About every 3 years">
+          <span class="radio"></span>About every 3 years
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Multiple times a year">
+          <span class="radio"></span>Multiple times a year
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="More than every 3 years">
+          <span class="radio"></span>Sometime after 3 years
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Rarely ever">
+          <span class="radio"></span>Rarely ever
+        </label>
+      </fieldset>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </body>
+</html>
